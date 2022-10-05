@@ -1,0 +1,17 @@
+{
+  "name": "wau-miau-autofill",
+  "version": "1.0.0",
+  "description": "auto-fill wau-miau submission form",
+  "main": "index.js",
+  "repository": "git@github.com:polaroidkidd/wau-miau-autofill.git",
+  "author": "Daniel Einars <contact@dle.dev>",
+  "license": "Apache License 2.0",
+  "private": false,
+  "scripts": {
+    "fill": "rimraf example.png && node index.js"
+  },
+  "dependencies": {
+    "puppeteer": "^18.1.0",
+    "rimraf": "^3.0.2"
+  }
+}
