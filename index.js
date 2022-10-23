@@ -9,12 +9,12 @@ const USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/
 
 
 const FILE_TO_UPLOAD = "/home/dle/Downloads/kleintierpraxis/kleintierpraxis.pdf";
-const TREATMENT_DAY = "080922";
+const TREATMENT_DAY = "08092022";
 const IS_TREATMENT_COMPLETED = false;
 const IS_THIRD_PARTY_AT_FAULT = false;
 const SYMPTOMS = "Wunde knöchel an den hinterpfoten";
-const DATE_FOR_FIRST_SYMPTOM = "070722";
-const DATE_FOR_FIRST_TREATMENT = "080922";
+const DATE_FOR_FIRST_SYMPTOM = "07072022";
+const DATE_FOR_FIRST_TREATMENT = "08092022";
 
 async function createPage (browser,url) {
 
