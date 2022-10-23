@@ -8,10 +8,13 @@
   "license": "Apache License 2.0",
   "private": false,
   "scripts": {
-    "fill": "rimraf example.png && node index.js"
+    "fill": "rimraf ./screenshots && mkdir ./screenshots && node index.js"
   },
   "dependencies": {
     "puppeteer": "^18.1.0",
+    "puppeteer-extra": "^3.3.4",
+    "puppeteer-extra-plugin-stealth": "^2.11.1",
+    "random-useragent": "^0.5.0",
     "rimraf": "^3.0.2"
   }
 }
