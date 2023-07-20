@@ -1,8 +1,14 @@
-import { test as it } from "@playwright/test";
+import { test as it, chromium } from "@playwright/test";
+
 import path from "path";
 const today = new Date();
 
-const dateOfTreatment = today.toISOString().split("T")[0].split("-").reverse().join("");
+const dateOfTreatment = today
+  .toISOString()
+  .split("T")[0]
+  .split("-")
+  .reverse()
+  .join("");
 
 const symptoms =
   "Simparica tablette für entwurming, Behandlung von Krallen und Kontrollkonsultation für mögliche Fehlstellung";
@@ -119,16 +125,41 @@ it("should fill out the form", async ({ page }) => {
     .getByLabel("Date of the first treatment of this disease / injury")
     .fill(dateOfTreatment);
 
-  await page.locator('#guideContainer-rootPanel-panel-panel_1471735713-helvetiaradiobutton__ label').filter({ hasText: 'Yes' }).locator('span').nth(1).click();
-  await page.locator('#guideContainer-rootPanel-panel-panel_1471735713-helvetiaradiobutton__ label').filter({ hasText: 'Yes' }).locator('span').nth(1).click();
-  await page.locator('#guideContainer-rootPanel-panel-panel_1471735713-helvetiaradiobutton___ label').filter({ hasText: 'No' }).locator('span').nth(1).click();
-  await page.getByLabel('Next').click();
-  await page.getByLabel('Next').click();
-  await page.locator('#guideContainer-rootPanel-pnlSummary-helvetiacheckbox__ span').nth(1).click();
-  await page.locator('#guideContainer-rootPanel-pnlSummary-helvetiacheckbox_cop__ span').nth(1).click();
-  await page.frameLocator('iframe[name="a-9j6lda5u78l5"]').getByLabel('I\'m not a robot').click();
-  await page.frameLocator('iframe[name="c-9j6lda5u78l5"]').locator('td:nth-child(3)').first().click();
-  await page.frameLocator('iframe[name="c-9j6lda5u78l5"]').locator('tr:nth-child(2) > td:nth-child(3)').click();
-  await page.frameLocator('iframe[name="c-9j6lda5u78l5"]').locator('tr:nth-child(2) > td:nth-child(2)').click();
-  await page.getByText('ERV', { exact: true }).click();
+  await page
+    .locator(
+      "#guideContainer-rootPanel-panel-panel_1471735713-helvetiaradiobutton__ label"
+    )
+    .filter({ hasText: "Yes" })
+    .locator("span")
+    .nth(1)
+    .click();
+  await page
+    .locator(
+      "#guideContainer-rootPanel-panel-panel_1471735713-helvetiaradiobutton__ label"
+    )
+    .filter({ hasText: "Yes" })
+    .locator("span")
+    .nth(1)
+    .click();
+  await page
+    .locator(
+      "#guideContainer-rootPanel-panel-panel_1471735713-helvetiaradiobutton___ label"
+    )
+    .filter({ hasText: "No" })
+    .locator("span")
+    .nth(1)
+    .click();
+  await page.getByLabel("Next").click();
+  await page.getByLabel("Next").click();
+  await page
+    .locator("#guideContainer-rootPanel-pnlSummary-helvetiacheckbox__ span")
+    .nth(1)
+    .click();
+  await page
+    .locator("#guideContainer-rootPanel-pnlSummary-helvetiacheckbox_cop__ span")
+    .nth(1)
+    .click();
+
+  await page.waitForTimeout(100000);
+
 });

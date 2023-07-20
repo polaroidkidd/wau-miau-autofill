@@ -9,7 +9,7 @@
   "private": false,
   "scripts": {
     "fill": "rimraf ./screenshots && mkdir ./screenshots && node index.js",
-    "test:integration:ui": "playwright test --ui"
+    "test:integration:ui": "playwright test --debug"
   },
   "dependencies": {
     "puppeteer": "^18.1.0",
