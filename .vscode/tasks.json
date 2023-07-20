@@ -1,0 +1,19 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "fill",
+			"problemMatcher": [],
+			"label": "npm: fill",
+			"detail": "rimraf ./screenshots && mkdir ./screenshots && node index.js"
+		},
+		{
+			"type": "npm",
+			"script": "test:integration:ui",
+			"problemMatcher": [],
+			"label": "npm: test:integration:ui",
+			"detail": "playwright test --ui"
+		}
+	]
+}

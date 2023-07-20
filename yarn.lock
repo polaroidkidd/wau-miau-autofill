@@ -2,6 +2,16 @@
 # yarn lockfile v1
 
 
+"@playwright/test@^1.36.1":
+  version "1.36.1"
+  resolved "https://registry.npmjs.org/@playwright/test/-/test-1.36.1.tgz#0b1247d279f142ac0876ce25e7daf15439d5367b"
+  integrity sha512-YK7yGWK0N3C2QInPU6iaf/L3N95dlGdbsezLya4n0ZCh3IL7VgPGxC6Gnznh9ApWdOmkJeleT2kMTcWPRZvzqg==
+  dependencies:
+    "@types/node" "*"
+    playwright-core "1.36.1"
+  optionalDependencies:
+    fsevents "2.3.2"
+
 "@types/debug@^4.1.0":
   version "4.1.7"
   resolved "https://registry.npmjs.org/@types/debug/-/debug-4.1.7.tgz#7cc0ea761509124709b8b2d1090d8f6c17aadb82"
@@ -184,6 +194,11 @@ fs.realpath@^1.0.0:
   resolved "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
   integrity sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==
 
+fsevents@2.3.2:
+  version "2.3.2"
+  resolved "https://registry.npmjs.org/fsevents/-/fsevents-2.3.2.tgz#8a526f78b8fdf4623b709e0b975c52c24c02fd1a"
+  integrity sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==
+
 get-stream@^5.1.0:
   version "5.2.0"
   resolved "https://registry.npmjs.org/get-stream/-/get-stream-5.2.0.tgz#4966a1795ee5ace65e706c4b7beb71257d6e22d3"
@@ -351,6 +366,11 @@ pend@~1.2.0:
   version "1.2.0"
   resolved "https://registry.npmjs.org/pend/-/pend-1.2.0.tgz#7a57eb550a6783f9115331fcf4663d5c8e007a50"
   integrity sha512-F3asv42UuXchdzt+xXqfW1OGlVBe+mxa2mqI0pg5yAHZPvFmY3Y6drSf/GQ1A86WgWEN9Kzh/WrgKa6iGcHXLg==
+
+playwright-core@1.36.1, playwright-core@^1.36.1:
+  version "1.36.1"
+  resolved "https://registry.npmjs.org/playwright-core/-/playwright-core-1.36.1.tgz#f5f275d70548768ca892583519c89b237a381c77"
+  integrity sha512-7+tmPuMcEW4xeCL9cp9KxmYpQYHKkyjwoXRnoeTowaeNat8PoBMk/HwCYhqkH2fRkshfKEOiVus/IhID2Pg8kg==
 
 progress@2.0.3:
   version "2.0.3"

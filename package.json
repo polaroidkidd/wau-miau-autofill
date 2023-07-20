@@ -8,7 +8,8 @@
   "license": "Apache License 2.0",
   "private": false,
   "scripts": {
-    "fill": "rimraf ./screenshots && mkdir ./screenshots && node index.js"
+    "fill": "rimraf ./screenshots && mkdir ./screenshots && node index.js",
+    "test:integration:ui": "playwright test --ui"
   },
   "dependencies": {
     "puppeteer": "^18.1.0",
@@ -16,5 +17,10 @@
     "puppeteer-extra-plugin-stealth": "^2.11.1",
     "random-useragent": "^0.5.0",
     "rimraf": "^3.0.2"
+  },
+  "engines": {"node": "v18.16.0"},
+  "devDependencies": {
+    "@playwright/test": "^1.36.1",
+    "playwright-core": "^1.36.1"
   }
 }
